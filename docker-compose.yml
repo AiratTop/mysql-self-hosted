@@ -3,8 +3,7 @@ services:
     container_name: mysql
     hostname: mysql
     image: mysql:latest
-    networks:
-      - shared_network
+    networks: ['shared_network']
     ports:
       - '3306:3306'
     restart: always
@@ -20,7 +19,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
 networks:
   shared_network:
     name: shared_network
