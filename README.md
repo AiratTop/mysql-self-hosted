@@ -9,7 +9,8 @@ It is pre-configured to join a shared Docker network, which simplifies connectin
 -   Uses the official MySQL Docker image.
 -   Persists data in a local volume.
 -   Configured for a shared network for easy integration.
--   Includes scripts for easy management.
+-   Includes scripts for easy management (`restart-docker.sh`, `update-docker.sh`).
+-   Includes a `backup.sh` script for easy database backups.
 
 ## Getting Started
 
@@ -38,6 +39,7 @@ It is pre-configured to join a shared Docker network, which simplifies connectin
 -   **Start:** `docker compose up -d`
 -   **Restart:** `./restart-docker.sh`
 -   **Update:** `./update-docker.sh` (Pulls the latest image and restarts)
+-   **Backup:** `./backup.sh` (Creates a compressed backup in the `backups` directory)
 
 ## Connecting with n8n
 
