@@ -1,5 +1,7 @@
 # MySQL Self-Hosted with Docker
 
+![mysql-self-hosted](https://repository-images.githubusercontent.com/1070263564/4d7f26ab-9654-4b62-9e97-a4cd5f9f7c12)
+
 This repository provides a `docker compose` setup for running a self-hosted [MySQL](https://www.mysql.com/) server.
 
 It is pre-configured to join a shared Docker network, which simplifies connecting to other services like [n8n](https://github.com/AiratTop/n8n-self-hosted).
